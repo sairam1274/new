@@ -1,13 +1,107 @@
 <div class="row">
 	<div class="large-12 columns">
 		<div class="large-3 columns panel">
-		  <a href="/GATE" class="button [tiny success radius round]" style="width:200px">GATE</a><br />
-		  <a href="/IES" class="button [tiny info radius round]" style="width:200px">IES</a><br />
-		  <a href="/CPTP" class="button [tiny alert radius round]" style="width:200px">CPTP</a><br />
-		  <a href="/PSUs" class="button [tiny success radius round]" style="width:200px">PSUs</a><br />
+		 
+		  <a href="/GATE" class="btn-slide button alert">
+            <span class="circle">
+            	<span class="icon-long-arrow-right "></span>
+            </span>
+            <span class="title">GATE</span>
+            <span class="title-hover">GATE</span>
+          </a>
+           <a href="/IES" class="btn-slide button success">
+            <span class="circle">
+            	<span class="icon-long-arrow-right "></span>
+            </span>
+            <span class="title">IES</span>
+            <span class="title-hover">IES</span>
+          </a>
+           <a href="/CPTP" class="btn-slide button info ">
+            <span class="circle">
+            	<span class="icon-long-arrow-right "></span>
+            </span>
+            <span class="title">CPTP</span>
+            <span class="title-hover">CPTP</span>
+          </a>
+           <a href="/PSUs" class="btn-slide button alert ">
+            <span class="circle">
+            	<span class="icon-long-arrow-right "></span>
+            </span>
+            <span class="title">PSUs</span>
+            <span class="title-hover">PSUs</span>
+          </a>
+
 		</div>
 		<div class="large-9 columns">
 		  <img src="/assets/TrueSupport.png" alt="slide image"> 
 		</div>
 	</div>
 </div>
+
+<style type="text/css">
+.btn-slide {
+  position: relative;
+  display: inline-block;
+  height: 50px;
+  width: 200px;
+  line-height: 50px;
+  padding: 0 20px;
+ 
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px; 
+ 
+  transition: .5s;
+  -webkit-transition: .5s;
+ 
+  border: 2px solid #1275b7;
+}
+  .btn-slide:hover {
+    background-color: #1275b7;
+  }
+    .btn-slide:hover span.circle {
+      left: 100%;
+      margin-left: -45px;
+      background-color:#484848;
+    }
+    .btn-slide:hover span.title {
+      left: 40px;
+      opacity: 0;
+    }
+    .btn-slide:hover span.title-hover {
+      opacity: 1;
+      left: 40px;
+    }
+ 
+  .btn-slide span.circle {
+    display: block;
+    background-color: #484848 ;
+    position: absolute;
+    float: left;
+    margin: 5px;
+    line-height: 42px;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    left: 0;
+ 
+    transition: .5s;
+    -webkit-transition: .5s;
+ 
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+  }
+ 
+  .btn-slide span.title,
+  .btn-slide span.title-hover {
+    position: absolute;
+    left: 80px;
+    transition: .5s;
+    -webkit-transition: .5s;
+  }
+ 
+  .btn-slide span.title-hover {
+    left: 80px;
+    opacity: 0;
+  }</style>
