@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="large-12 columns">
+    <h4>Forgot your password?</h4><br />
+    <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+	    <%= devise_error_messages! %>
+	    <div class = "large-5 columns panel">
+	      <%= f.email_field :email, :autofocus => true %>
+	 
+	     <%= f.submit "Send me reset password instructions", :class => "button radius success small" %>
+	    </div>
+	<% end %>
+
+</div>
+</div>
